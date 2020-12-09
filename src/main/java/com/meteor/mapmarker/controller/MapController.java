@@ -38,6 +38,7 @@ public class MapController {
         myLocation.setLongitude(longitude);
         myLocation.setLatitude(latitude);
         myLocation.setIconPath("../resource/myLocation.png");
+        System.out.println("地图初始化...");
 //        redisTemplate.opsForValue(0,latitude + ":" + longitude, TimeUnit.HOURS);
 //        redisTemplate.opsForValue().set("0",latitude + ":" + longitude+":"+"我的位置", 1,TimeUnit.HOURS);
         nearbys.add(myLocation);
