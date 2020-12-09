@@ -33,6 +33,7 @@ public class MapmarkerApplicationTests{
     @Test
     public void getAll(){
         Set<String> keys = redisTemplate.keys("*");
+
         System.out.println(keys);
     }
 
@@ -44,19 +45,19 @@ public class MapmarkerApplicationTests{
         System.out.println(distance);
     }
 
-    @Test
-    public void removeList(){
-        List<String> test = new LinkedList<String>();
-        test.add("0");
-        test.add("1");
-        test.add("2");
-        test.add("3");
-        test.add("4");
-        test.add("5");
-        List<String> result = test.subList(0, test.size() - 1);
-        System.out.println(result);
-
-    }
+//    @Test
+//    public void removeList(){
+//        List<String> test = new LinkedList<String>();
+//        test.add("0");
+//        test.add("1");
+//        test.add("2");
+//        test.add("3");
+//        test.add("4");
+//        test.add("5");
+//        List<String> result = test.subList(0, test.size() - 1);
+//        System.out.println(result);
+//
+//    }
 
 //    @Test
 //    public void testUtil(){
